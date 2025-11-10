@@ -12,3 +12,6 @@ elif op == "/":
 else:
  resultado = "Operación no válida"
 print(f"Resultado: {resultado}")
+
+with open("historial.txt", "a") as f:
+ f.write(f"{a} {op} {b} = {resultado}\n")
